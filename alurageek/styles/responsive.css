@@ -1,0 +1,135 @@
+@media (max-width: 1300px) {
+    .conteudo {
+        margin: 2rem 0;
+        gap: 1rem;
+    }
+
+    .produtos {
+        padding: 1.8rem 1rem 1.8rem 1.8rem;
+    }
+
+    .loja {
+        min-width: 28rem;
+    }
+
+    .add_produtos {
+        padding: 1.8rem 1.8rem 1.8rem 1rem;
+    }
+
+    .add_produtos__form input {
+        width: 20rem;
+    }
+
+    .button__salvar, .button__limpar{
+        width: 10rem;
+    }
+ 
+}
+
+@media (max-width: 1024px) {
+    .conteudo {
+        flex-direction: column-reverse;
+        box-sizing: border-box;
+        margin: 1rem 0;
+    }
+
+    .add_produtos {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .add_produtos h1 {
+        text-wrap: wrap;
+    }
+
+    .form__button {
+        justify-content: space-between;
+    }
+    
+    .produtos {
+        padding: 1rem 0;
+    }
+    
+    .loja {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        min-height: 41rem;
+        min-width: 1rem;
+        max-width: 40rem;
+    }
+
+    .loja > * {
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 780px) {
+    .cabecalho {
+        font-size: 1rem;
+    }
+    
+    .loja {
+        max-width: 26rem;
+    }
+
+    .rodape {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .cabecalho {
+        font-size: 0.6rem;
+    }
+
+    .cabecalho img {
+        height: 2.5rem;
+    }
+    
+    .add_produtos__form input {
+        width: 19rem;
+        height: 2rem;
+    }
+
+    .button__salvar, .button__limpar {
+        height: 3rem;
+        width: 9rem;
+    }
+    
+    .produtos h1 {
+        text-align: center;
+        text-wrap: nowrap;
+    }
+
+    .loja {
+        max-width: 19rem;
+    }
+
+    .rodape__logo img {
+        height: 2.2rem;
+    }
+
+    .rodape__loho h2 {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 370px) {
+    
+    .add_produtos__form input {
+        width: 15rem;
+        height: 2rem;
+    }
+
+    .button__salvar, .button__limpar {
+        height: 2.5rem;
+        width: 7rem;
+    }
+
+    .loja {
+       max-width: 13rem;
+    }
+}

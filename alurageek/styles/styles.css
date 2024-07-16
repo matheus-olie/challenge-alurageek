@@ -1,0 +1,257 @@
+:root {
+    --cor-primaria: #5D04D9;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #03318C;
+    --cor-quarternaria: #5300C8;
+    
+    --fonte-titulos: "Press Start 2P", system-ui;
+    --fonte-texto: "IBM Plex Mono", monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte-titulos);
+    color: #E5E5E5;
+    background-color: var(--cor-quarternaria);
+    width: 100%;
+    height: 6rem;
+    font-size: 16px;
+    box-shadow: 0 0 1px 7px rgba(0, 0, 0, 0.4);
+}
+.cabecalho img {
+    height: 3.5rem;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 2rem;    
+}
+
+.produtos {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produtos h1 {
+    font-family: var(--fonte-titulos);
+    color: var(--cor-secundaria);
+    font-size: 1.2rem;
+}
+
+.loja {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    box-shadow: -10px 10px 7px rgba(1, 0, 0, 0.3);
+    min-height: 31rem;
+    max-height: 38.5rem;
+    min-width: 41.7rem;
+    max-width: 41.8rem;
+    padding: 1rem;
+    gap: 10px;
+    overflow-y: scroll;
+}
+
+.loja::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+.loja::-webkit-scrollbar-thumb {
+    background-color: var(--cor-primaria);
+    border-radius: 10px;
+}
+
+.loja__card {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--cor-secundaria);
+    border-radius: 10px;
+    background-color: var(--cor-primaria);
+    width: 11.5rem;
+    height: 14.8rem;
+    font-family: var(--fonte-texto);
+    color: #FFFFFF;
+    padding: 10px;
+    gap: 10px;
+    box-shadow: -6px 6px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 3rem;
+}
+
+.card__img {
+    border: 3px solid var(--cor-secundaria);
+    border-radius: 10px;
+    width: 176px;
+    height: 176px;
+    align-self: center;
+    background-color: #FFFFFF;
+}
+
+.card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.card__info p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.loja__vazia {
+    font-family: var(--fonte-texto) !important;
+    text-align: center !important;
+    font-size: 1.5rem !important;
+    color: var(--cor-terciaria) !important;
+    justify-items: center !important;
+}
+
+.card__preco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__preco h2 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.card__delete {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.add_produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+.add_produtos h1 {
+    font-family: var(--fonte-titulos);
+    color: var(--cor-secundaria);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.add_produtos__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    gap: 2.5rem;
+}
+
+.add_produtos__form input {
+    border: 3px solid var(--cor-terciaria);
+    border-radius: 30px;
+    width: 24.5rem;
+    height: 3rem;
+    outline: none;
+    font-family: var(--fonte-texto);
+    color: var(--cor-terciaria);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px;
+
+}
+input::placeholder {
+    font-family: var(--fonte-texto);
+    color: var(--cor-terciaria);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form__button{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.button__salvar {
+    text-decoration: none;
+    background-color: var(--cor-terciaria);
+    font-family: var(--fonte-texto);
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+    height: 3.4rem;
+    width: 11.8rem;
+    border-radius: 15px;
+    border: none;
+}
+
+.button__limpar {
+    text-decoration: none;
+    font-family: var(--fonte-texto);
+    color: var(--cor-terciaria);
+    font-size: 20px;
+    font-weight: 500;
+    height: 3.4rem;
+    width: 11.8rem;
+    border-radius: 15px;
+    border: 3px solid var(--cor-terciaria);
+}
+
+.rodape {
+    background-color: var(--cor-quarternaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    width: 100%;
+    box-shadow: 0 0 4px 7px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.rodape__logo {
+    display: flex;
+    align-items: center;
+}
+
+.rodape__logo img {
+    height: 56px;
+}
+
+.rodape__logo h2 {
+    font-family: var(--fonte-titulos);
+    color: #E5E5E5;
+    font-size: 1.2rem;
+}
+
+.rodape__text {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    text-align: center;
+    color: #FFFFFF;
+    gap: 16px;
+    text-wrap: nowrap;
+}
+
+.rodape__text p1 {
+    font-weight: 200;
+    text-wrap: nowrap;
+}
+
